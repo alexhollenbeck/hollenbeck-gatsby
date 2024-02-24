@@ -20,6 +20,7 @@
     "@mantine/hooks": "^7.5.3",
     "eslint": "^7.32.0",
     "gatsby": "^5.13.3",
+    "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-postcss": "^6.13.1",
     "prettier": "^3.2.5",
     "react": "^18.2.0",
