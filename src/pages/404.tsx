@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, HeadFC, PageProps } from "gatsby"
+import { Center, Stack, Title, Group, Anchor } from "@mantine/core"
 
 const pageStyles = {
   color: "#232129",
@@ -26,20 +27,12 @@ const codeStyles = {
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+      <Center h={'100vh'} bg={'black'}>
+        <Stack align="center">
+          <Title order={1} c='white'>Page not found</Title>
+          <Anchor href='/'>go home</Anchor>
+        </Stack>
+      </Center> 
     </main>
   )
 }

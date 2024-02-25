@@ -8,7 +8,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Center h={'100vh'} bg={'black'}>
         <Stack align="center">
           <Title order={1} c='white'>Alex Hollenbeck</Title>
-          <Title order={2} c='white' size='md'>Full-stack web developer</Title>
+          <Title order={2} c='white' size='md'>Software engineer</Title>
           <Group mt='md'>
             <Anchor href='https://www.linkedin.com/in/alexhollenbeck/' target='_blank'>linkedin</Anchor>
             <Anchor href='https://github.com/alexhollenbeck' target='_blank'>github</Anchor>
@@ -22,4 +22,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Alex Hollenbeck | Full-stack web developer</title>
+export const Head: HeadFC = () => <title>Alex Hollenbeck | Software engineer</title>
